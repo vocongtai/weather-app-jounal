@@ -96,7 +96,7 @@ const showWeather = async (data) => {
       zip.value = "";
       feelings.value = "";
       date.innerHTML = data.date;
-      temp.innerHTML = data.temp + " degree ";
+      temp.innerHTML = Math.round(data.temp) + " degree ";
       content.innerHTML = data.content;
       errorContent.innerHTML = "";
     }
