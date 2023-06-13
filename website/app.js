@@ -1,7 +1,7 @@
 
 /* Global Variables */
 const baseURL = "https://api.openweathermap.org/data/2.5/weather";
-const APIKey = "bec6a2448f05fd878d18c1159a5a0cd7";
+const APIKey = "bec6a2448f05fd878d18c1159a5a0cd7&units=imperial";
 
 //get value Zip code
 const zip = document.getElementById("zip");
@@ -23,7 +23,7 @@ const content = document.getElementById("content");
 
 // Create a new date instance dynamically with JS
 let d = new Date();
-let newDate = d.getMonth() + "." + d.getDate() + "." + d.getFullYear();
+let newDate = d.getMonth()+1 + "." + d.getDate() + "." + d.getFullYear();
 
 //Get METHOD API
 const getDataWeather = async (url) => {
